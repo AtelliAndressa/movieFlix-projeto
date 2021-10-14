@@ -1,0 +1,1 @@
+export const keyApi = "ffbfb71c71e796eb88793b834f9a22fb";

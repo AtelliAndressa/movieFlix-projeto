@@ -1,0 +1,12 @@
+.selectGenre {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+    
+}
+
+select {
+    width: 160px;
+    height: 32px;
+}

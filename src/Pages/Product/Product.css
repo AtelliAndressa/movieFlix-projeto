@@ -1,0 +1,62 @@
+button {
+    font-size: 0.8em;
+    margin: 1em;
+    padding: 0.30em 1em;
+    border: 1.5px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(7, 7, 7);
+    color: White;
+}
+
+.texto {
+    width: 100%;
+    font-weight: normal;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    justify-content: flex-start;
+    font-size: 14px;
+ 
+}
+
+.cardElencos {
+    width: 120px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+}
+
+.imgElenco {
+    border-radius: 30px;
+}
+
+.cardRecomendacoes {
+    width: 120px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+}
+
+.textoSessao {
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 50px;
+}
+
+.youtube {
+    text-align: center;
+    padding-top: 30px;
+}

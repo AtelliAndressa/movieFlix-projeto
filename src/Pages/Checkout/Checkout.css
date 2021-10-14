@@ -1,0 +1,45 @@
+button {
+    font-size: 0.5em;
+    margin: 1em;
+    padding: 0.30em 0.5em;
+    border: 1.5px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(7, 7, 7);
+    color: White;
+}
+
+.checkoutCard {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+  
+}
+
+.containerButton{
+    padding: 20px 0px;
+    display: flex;
+    position: fixed;
+    top: 152px;
+    right: 150px;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.elementTitle{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 15px;
+    font-size: 20px;
+    
+}

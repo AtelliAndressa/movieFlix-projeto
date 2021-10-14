@@ -1,0 +1,35 @@
+.text-title {
+  font-size: 12px;
+  overflow-wrap: break-word;
+}
+
+.card {
+  width: 165px;
+  min-height: 328px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 10px 10px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  border-radius: 6px;
+}
+
+button {
+  margin: 4px;
+  align-items: flex-end;
+}
+
+.buttonMovies {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  padding-bottom: 5px;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font-weight: bold;
+}
