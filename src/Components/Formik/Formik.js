@@ -45,7 +45,7 @@ export default function FormikLogin() {
   console.log(formik.errors);
 
   return (
-    <StyledContainer style={{backgroundImage: `url(${bg})`}}>
+    <StyledContainer style={{ backgroundImage: `url(${bg})` }}>
       <StyledLogin>
         <form onSubmit={formik.handleSubmit}>
           <StyledTitle>
@@ -53,12 +53,12 @@ export default function FormikLogin() {
               <label>Seja bem vindo!</label>
             </p>
             <label>Você está no MovieFlix</label>
-            <p>O melhor serviço existente de streaming do mundo</p>
+            <p>O melhor serviço de streaming na atualidade!</p>
           </StyledTitle>
           <div>
             <h4>Fazer Login</h4>
             <Input
-            placeholder="E-mail"
+              placeholder="E-mail"
               id="email"
               name="email"
               type="email"
@@ -71,8 +71,6 @@ export default function FormikLogin() {
           </div>
 
           <div>
-            
-
             <Input
               placeholder="Senha"
               size="md"
@@ -85,12 +83,11 @@ export default function FormikLogin() {
               }}
             />
           </div>
-         
-            <Button   
-            type="submit"
-            color="whrite" 
-            > Logar </Button>
-      
+
+          <Button type="submit" color="whrite">
+            {" "}
+            Logar{" "}
+          </Button>
         </form>
       </StyledLogin>
     </StyledContainer>

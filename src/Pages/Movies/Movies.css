@@ -3,10 +3,14 @@
     justify-content: space-between;
     padding: 8px;
     align-items: center;
-    
 }
 
 select {
     width: 160px;
     height: 32px;
+}
+
+h2, select, option {
+    margin-left: 15px;
+    font-weight: bold;
 }

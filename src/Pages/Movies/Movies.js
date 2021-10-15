@@ -52,7 +52,7 @@ console.log(filterGenre)
   return (
     <div>
       <Navbar />
-      <h1>Lançamentos</h1>
+      <h2> Lançamentos</h2>
       <StyledContainerCard>
         <Carousel show={6}>
           {listMovie.map((movie) => {
@@ -62,11 +62,14 @@ console.log(filterGenre)
       </StyledContainerCard>
 
       <div className="selectGenre">
-        <h3>Genêro</h3>
+        <h2>Genêros</h2>
         <select name="filterSelect" onChange={renderListGenre}>
           <option value="28">Ação</option>
           <option value="12">Aventura</option>
           <option value="16">Animação</option>
+          <option value="18">Drama</option>
+          <option value="878">Ficção</option>
+          <option value="35">Comédia</option>
         </select>
       </div>
       <StyledContainerCard>

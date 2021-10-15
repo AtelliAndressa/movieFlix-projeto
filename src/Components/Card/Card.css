@@ -32,4 +32,9 @@ span {
   justify-content: center;
   padding: 5px;
   font-weight: bold;
+  cursor: pointer;
+}
+
+img {
+  cursor: pointer;
 }

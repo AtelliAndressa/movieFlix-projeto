@@ -18,6 +18,7 @@ button {
     padding-top: 10px;
     justify-content: flex-start;
     font-size: 14px;
+    font-weight: 500;
  
 }
 
@@ -34,7 +35,7 @@ button {
 }
 
 .imgElenco {
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 .cardRecomendacoes {

@@ -7,7 +7,7 @@ export const StyledContainer = styled.div`
   background-size: cover;
   display: flex;
   justify-content: center;
-  opacity: 0.75;
+  opacity: 0.80;
 `;
 
 export const StyledLogin = styled.div`

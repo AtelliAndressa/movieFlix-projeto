@@ -35,7 +35,7 @@ export default function Checkout() {
     return (
       <div>
         <Navbar />
-        <h1>Sem itens no carrinho</h1>
+        <div className="semItensCarrinho">Seu carrinho se encontra vazio</div>
       </div>
     );
   }
@@ -49,20 +49,19 @@ export default function Checkout() {
           {cart.map((element) => (
             <div className="checkoutCard" key={element.id}>
               <div>
-                 <img
-                      src={
-                        element.poster_path === null
-                          ? "/img/sem-foto.jpg"
-                          : "https://image.tmdb.org/t/p/w45" +
-                            element.poster_path
-                      } 
-                    />
-                  </div>
+                <img
+                  src={
+                    element.poster_path === null
+                      ? "/img/sem-foto.jpg"
+                      : "https://image.tmdb.org/t/p/w45" + element.poster_path
+                  }
+                />
+              </div>
               <div className="elementTitle">
-              <span>{element.title}</span>
-              <span>
-                {"R$ " + (Number(element.vote_average) * 10).toFixed(2)}
-              </span>
+                <span>{element.title}</span>
+                <span>
+                  {"R$ " + (Number(element.vote_average) * 10).toFixed(2)}
+                </span>
               </div>
               <div>
                 <button onClick={() => removeMovieCart(element.id)}>
@@ -71,10 +70,10 @@ export default function Checkout() {
               </div>
             </div>
           ))}
-          
+
           <div className="containerButton">
-          <span>Total: R$ {total}</span>
-          <button onClick={SalvarHistoricoCompras}>Finalizar</button>
+            <span>Total: R$ {total}</span>
+            <button onClick={SalvarHistoricoCompras}>Finalizar</button>
           </div>
         </StyledChekout>
       </StyledContainerCheckout>

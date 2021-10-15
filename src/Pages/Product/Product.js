@@ -30,7 +30,6 @@ async function getRecommendation(movie_id) {
   return recommendationId.data.results;
 }
 
-//`${API_BASE}/movie/${id}/recommendations?api_key=${API_Key}&language=pt-BR`
 
 export default function Product() {
   const produto = useParams();
