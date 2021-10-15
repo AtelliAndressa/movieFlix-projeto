@@ -2,16 +2,17 @@ import styled from "styled-components";
 
 export const StyledContainer = styled.div`
   position: fixed;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-size: cover;
   display: flex;
   justify-content: center;
+  opacity: 0.75;
 `;
 
 export const StyledLogin = styled.div`
-   text-align: center;
-  margin-top: 80px;
+  text-align: center;
+  margin-top: 6%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,8 +23,8 @@ export const StyledLogin = styled.div`
   justify-content: center;
   cursor: pointer;
   border-radius: 8px;
-  border: 1px solid blue;
-  padding: 5px;
+  border: 1px solid black;
+  padding: 0px 15px;
 `;
 
 export const StyledTitle = styled.div`
@@ -32,12 +33,11 @@ export const StyledTitle = styled.div`
   margin-bottom: 1vw;
   text-align: center;
   label {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 19px;
     color: #0d1128;
   }
   p {
-    opacity: 0.7;
+    opacity: 0.9;
   }
 `;
-

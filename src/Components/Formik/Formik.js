@@ -6,10 +6,10 @@ import {
   StyledLogin,
   StyledContainer,
   StyledTitle,
-  StyledButton,
 } from "../Formik/Formik.styled";
 import { useHistory } from "react-router-dom";
 import { MyContext } from "../../Context/Context";
+import bg from "../../Img/small.jpg";
 
 const Schema = Yup.object().shape({
   email: Yup.string().email("Invalid email").required("Requerid"),
@@ -45,7 +45,7 @@ export default function FormikLogin() {
   console.log(formik.errors);
 
   return (
-    <StyledContainer>
+    <StyledContainer style={{backgroundImage: `url(${bg})`}}>
       <StyledLogin>
         <form onSubmit={formik.handleSubmit}>
           <StyledTitle>
@@ -75,6 +75,7 @@ export default function FormikLogin() {
 
             <Input
               placeholder="Senha"
+              size="md"
               id="senha"
               type="password"
               value={formik.values.senha}
