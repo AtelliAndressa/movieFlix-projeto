@@ -23,7 +23,6 @@ export const StyledLogin = styled.div`
   justify-content: center;
   cursor: pointer;
   border-radius: 8px;
-  border: 1px solid black;
   padding: 0px 15px;
 `;
 
