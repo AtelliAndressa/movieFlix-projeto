@@ -1,15 +1,12 @@
 import React, { useContext } from "react";
 import { useFormik } from "formik";
-import * as Yup from "yup"; //biblioteca validaçao
+import * as Yup from "yup"; 
 import { Button, Input } from "@chakra-ui/react";
-import {
-  StyledLogin,
-  StyledContainer,
-  StyledTitle,
-} from "../Formik/Formik.styled";
+import {  StyledLogin,  StyledContainer,  StyledTitle,} from "../Formik/Formik.styled";
 import { useHistory } from "react-router-dom";
 import { MyContext } from "../../Context/Context";
 import bg from "../../Img/small.jpg";
+import "./Formik.css";
 
 const Schema = Yup.object().shape({
   email: Yup.string().email("Invalid email").required("Requerid"),
@@ -21,7 +18,6 @@ const Schema = Yup.object().shape({
 
 export default function FormikLogin() {
   const history = useHistory();
-
   const { setUserAutentic, setCarregamento } = useContext(MyContext);
 
   const formik = useFormik({
@@ -31,7 +27,6 @@ export default function FormikLogin() {
       senha: "",
     },
     onSubmit: (values) => {
-      //alert(JSON.stringify(values, null, 2));
       loading(values);
     },
   });
@@ -39,10 +34,8 @@ export default function FormikLogin() {
   const loading = (values) => {
     sessionStorage.setItem("login", JSON.stringify(values));
     setUserAutentic(true);
-    history.push("/movies"); //muda pra essa rota quando logar, renderiza
+    history.push("/movies");
   };
-
-  console.log(formik.errors);
 
   return (
     <StyledContainer style={{ backgroundImage: `url(${bg})` }}>
@@ -57,7 +50,7 @@ export default function FormikLogin() {
           </StyledTitle>
           <div>
             <h4>Fazer Login</h4>
-            <Input
+            <Input className="input"
               placeholder="E-mail"
               id="email"
               name="email"
@@ -71,7 +64,7 @@ export default function FormikLogin() {
           </div>
 
           <div>
-            <Input
+            <Input className="input"
               placeholder="Senha"
               size="md"
               id="senha"
@@ -84,9 +77,8 @@ export default function FormikLogin() {
             />
           </div>
 
-          <Button type="submit" color="whrite">
-            {" "}
-            Logar{" "}
+          <Button type="submit" color="whrite" className="botton">
+            Logar
           </Button>
         </form>
       </StyledLogin>
