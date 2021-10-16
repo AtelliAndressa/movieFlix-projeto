@@ -7,7 +7,7 @@ export const StyledContainer = styled.div`
   background-size: cover;
   display: flex;
   justify-content: center;
-  opacity: 0.80;
+  opacity: 0.8;
 `;
 
 export const StyledLogin = styled.div`
@@ -18,11 +18,12 @@ export const StyledLogin = styled.div`
   justify-content: center;
   background-color: white;
   color: black;
-  width: 18%;
-  height: 50%;
+  width: 19%;
+  height: 65%;
   justify-content: center;
   cursor: pointer;
   border-radius: 8px;
+
   padding: 0px 15px;
 `;
 
